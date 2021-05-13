@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Words you forgot after 4th grade</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>A Quiz it is</title>
 </head>
-<body >
+<body>
   <main class="container">
-    <section id="question-container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
+    <header>
+      <div class="Quiz it is">
+        <div class="container">
+          <h1 class="display-6">A Quiz on words you forgot after 3rd Grade.</h1>
+          <p class="lead">This is game of language, and how much we use.</p>
+        </div>
+      </div>
+    </header>
+<!--Begin game section-->
+    <section >
+      <section class="control"></section>
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card">
+              <button id="start-btn" class="start-btn btn ">Start</button>
+              <div class="card-body">
+                <h5 class="card-title">Let the Games Begin</h5>
+                <p class="card-text">You will get a question, with 4 choices. anser corectly the box will turn green. Incoorect answers will turn red.  You will be prompted with the next question.  At time end or end of questions you will be given your score.</p>
+              </div>
+            </div>
+          </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Questions</h5>
+              <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+              </div>
+              <section class="clock">Time Remaining  <span  id ="time">  05:00 </span>minutes!
+              </section>  
+
+              <section class="score">Number right<span id ="score"></span> Out of <span id ="numQue"> </span>
+              </section> 
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="./assets/img/quitting.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <button id="quit-btn" class="reset-button ">Quit</button>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="./assets/img/leaderBoard.png" class="card-img-top" alt="scoreboard">
+            <div class="card-body">
+              <h5 class="card-title">Leader Board</h5>
+              <button id="leader-btn" class="leader-btn btn ">Register your score</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="control">
-      <button id="start-btn" class="start-btn btn">Start</button>
-      <button id="next-btn" class="start-btn btn hide">Next</button>
-      <button id="quit-btn" class="start-btn btn hide">Quit?</button>
-    </section>
-    <section class="clock">Time Remaining  <span id ="time">  05:00 </span>minutes!</section>
-      
-    
-    <script src="assets/js/script.js"></script>
   </main>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script> src="assets.js/script">
 </body>
 </html>

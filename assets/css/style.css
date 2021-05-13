@@ -2,84 +2,20 @@
   box-sizing: border-box;
 }
 
-:root {
-  --hue-neutral: 200;
-  --hue-wrong: 0;
-  --hue-correct: 145;
-}
-
-
-
 body {
-  --hue: var(--hue-neutral);
-  padding: 0;
+  font-family: Arial;
   margin: 0;
   display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: hsl(var(--hue), 100%, 20%);
+  flex-direction: row;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background: linear-gradient(0deg, rgba(19,41,61,1) 0%, rgba(237,245,249,1) 63%);
 }
-
-
-body.correct {
-  --hue: var(--hue-correct);
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-body.wrong {
-  --hue: var(--hue-wrong);
-}
-
-.container {
-  width: 800px;
-  max-width: 80%;
-  background-color: white;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 0 10px 2px;
-}
-
-.btn-grid {
-  display:grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin: 20px 0;
-}
-.btn {
-  --hue: var(--hue-neutral);
-  border: 2px solid hsl(var(--hue), 100%, 30%);
-  background-color: hsl(var(--hue), 100%, 50%);
-  border-radius: 5px;
-  padding: 5px 10px;
-  color: white;
-  outline: none;
-}
-
-.btn:hover {
-  border-color: black;
-}
-
-.btn.correct{
-  --hue: var(--hue-correct);
-}
-
-.btn.wrong{
-  --hue: var(--hue-wrong);
-}
-
-.start-btn, .next-btn, .quit-btn{
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 10px 20px;
-}
-
-.control{
-  display:flex;
-  justify-content:center;
-  align-items: center;
-}
-
 .clock {
   max-width: 60%;
   display:flex;
@@ -88,7 +24,49 @@ body.wrong {
   margin-top: 20px;
   background-color: burlywood;
 }
+.score {
+  max-width: 40%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: burlywood;
+}
 
-/.hide{
-  display: none;
+button {
+  background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,96,33,0.9542191876750701) 100%);
+  border-radius: 8px;
+  color: #13293d;
+  cursor: pointer;
+  font-size: 2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+}
+.reset-button {
+  font-size: 16px;
+  height: 30px;
+  line-height: 8px;
+  margin-top: 20px;
+}
+.btn:hover {
+  border-color: black;
+}
+.btn-grid {
+  display:grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+.btn.correct{
+  background-color:bg-success
+}
+.btn.wrong{
+  background-color:bg-danger ;
 }
