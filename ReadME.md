@@ -1,5 +1,9 @@
 # **It's a Quiz**
 
+## Not functional yet
+
+
+![Image](./assets/img/scrn1.png)
 ###  Criteria  
 . At start button
 - timer starts counting down
